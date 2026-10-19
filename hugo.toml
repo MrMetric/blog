@@ -1,0 +1,19 @@
+baseURL = "https://wizardmaxx.ing/"
+title = "Wizardmaxxing"
+locale = "en-us"
+disableKinds = [
+	"section",
+	"taxonomy",
+	"term",
+]
+
+[permalinks]
+	[permalinks.page]
+		posts = "/:slug/"
+
+[markup]
+	[markup.goldmark]
+		[markup.goldmark.parser.attribute]
+			block = true
+	[markup.goldmark.renderer]
+		unsafe = false
